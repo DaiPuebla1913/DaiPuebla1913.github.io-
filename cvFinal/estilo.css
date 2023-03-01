@@ -1,0 +1,167 @@
+body{
+    font-family: helvetica;
+    background-color: bisque;
+}
+
+.menu{
+    background-color: rgb(22, 21, 21);
+    color: rgb(243, 8, 153);
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 50%;
+}
+.opciones a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px;
+}
+.opciones{
+    background-color: rgb(247, 126, 200);
+    width: 120px;
+    display: none;
+}
+.opciones a:hover{
+    background-color: #b10299;
+}
+.desplegable:hover .opciones{
+    display: block;
+}
+.desplegable{
+    position: absolute;
+}
+
+  
+.buttons{
+    min-width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+    padding: 20px;
+}
+  
+.buttons a {
+    text-decoration: none;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #b10299;
+    color: #f1f1f1;
+    border-radius:20%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+}
+  
+.buttons a:hover {
+    transform: scale(1.2);
+}
+
+h1{
+    text-align: center;
+    color: rgb(175, 6, 175);
+    font-family:"lucida handwriting";
+    font-size: 50px;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+}
+  
+img {
+      width: 225px;
+      height: 225px;
+      border: 5px solid rgb(10, 0, 0);
+      border-radius: 50%;
+      display: block;
+      margin: auto;
+      padding: auto;
+}
+    
+p{
+    text-align: center;
+    color:rgb(105, 2, 92);
+    background-position: center;
+    padding: auto;
+    margin: auto;
+    font-size: 30px;
+}
+
+h2{
+    color: rgb(224, 5, 170);
+    text-align: center;
+    border: solid;
+    padding: 20px;
+    margin: 80px;
+    font-size: 25px;
+}
+   
+h3{
+    color: rgb(121, 5, 73);
+    text-align: justify;
+    font-size: 30px;
+    padding: 15px;
+    display: block;
+}
+  
+ 
+h4{
+      color: black;
+      text-align: start;
+      font-size: larger 30px;
+      text-decoration: underline;
+      margin: 30px;
+      padding: 15px;
+    }
+h5{ 
+color: black;
+text-align: center;
+font-size: 35px;
+}
+.intereses{
+    background-color: rgb(247, 126, 200);
+    width: 200px;
+    display: block;
+}
+ .intereses{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(224, 5, 170);
+    border-radius: 50px;
+    margin: auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-intereses .intereses i{
+    font-size: 30px;
+    margin-bottom:auto;
+}
+.descarga{
+    cursor: pointer;
+    background-color: rgb(7, 7, 7);
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color:rgb(224, 5, 170);
+    position: relative;
+    z-index: 10;
+}
+.descargar button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+.descargar button:hover .overlay{
+    width: 100%;
+}
